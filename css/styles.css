@@ -1,0 +1,76 @@
+body{
+    background-color: #000000;
+    overflow: hidden;
+    text-rendering: optimizeLegibility;
+}
+a{
+    color: yellow;
+}
+.txt{
+    color: white;
+    font-family: monospace;
+    text-align: center;
+    font-size: 300%;
+    padding-top: 3%;
+}
+.LilTxt{
+    color: #fff;
+    font-family: monospace;
+    text-align: center;
+    font-size: 100%;
+    padding-top: 3%;
+}
+.clock{
+    color: white;
+    font-family: monospace;
+    text-align: center;
+    padding-top: 3%;
+    font-size: 750%;
+    filter: blur(0.5px)
+}
+#console {
+    background-color: black;
+    color: #00ff07;
+    font-family: monospace;
+    border: 2px solid #ffffff;
+    padding: 10px;
+}
+
+#input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #00ff00;
+    font-family: monospace;
+}
+
+i{
+    position: absolute;
+    height: 200px;
+    background: linear-gradient(transparent, #fff);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: animate 5s linear infinite;
+}
+i:nth-child(3n + 1)
+{
+    background: linear-gradient(transparent, #0ff);
+}
+i:nth-child(3n + 2)
+{
+    background: linear-gradient(transparent, #0f0);
+}
+i:nth-child(3n + 3)
+{
+    background: linear-gradient(transparent, #f00);
+}
+
+
+@keyframes animate{
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(calc(100vh + 200px));
+    }
+}
